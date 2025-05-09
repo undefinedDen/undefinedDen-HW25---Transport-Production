@@ -9,7 +9,7 @@ import app.service.transpotrFactory.factoryForPlane.PlaneFactory;
 import app.view.AppView;
 
 
-public class Client {
+public class ClientController {
     public static int brandId;
     public static String brand;
     public static int operator;
@@ -18,7 +18,7 @@ public class Client {
         AppView view = new AppView();
 
         view.displayMenuOperation();
-        Client.operator = view.inputOperation();
+        ClientController.operator = view.inputOperation();
         switch (operator) {
             case 1 -> {
                 view.displayBrandMenu(CarBrands.getCarBrands());

@@ -1,11 +1,11 @@
 package app;
 
-import app.controller.Client;
+import app.controller.ClientController;
 
 public class Main {
 
     public static void main(String[] args) {
-                new Client().run();
+                new ClientController().run();
     }
 
 }
